@@ -97,10 +97,7 @@ def load_data(city, month, day):
     df['Start to End'] = df['Start Station'] + ' to ' + df['End Station']
 
     # Apply month and weekday filters:
-    # months = ['january', 'february', 'march', 'april', 'may', 'june']
-    # df['month'] = months[df['month']-1]
     if month!='all':
-        # month = months.index(month.lower())+1
         df = df[df['month']==month.title()]
     if day!='all':
         df = df[df['day_of_week']==day.title()]
@@ -108,7 +105,7 @@ def load_data(city, month, day):
 
 def view_data(df,n_rows=5):
     see_file = input('Would you like to see the first {} rows of this data set? Type yes or no: '.format(n_rows))
-    if see_file=='yes':
+    if see_file.lower()=='yes':
         row_start=0
         while see_file.lower()=='yes':
             print(df.iloc[row_start:row_start+n_rows])
