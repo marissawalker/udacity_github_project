@@ -8,7 +8,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 def get_filters():
     """
-    Asks user to specify a city, month, and day to analyze.
+    Asks user to specify a city, month, and day to analyze. There are a few alternate spellings allowed. For example, NYC or NY will both show New York City Data.
 
     Returns:
         (str) city - name of the city to analyze
@@ -121,7 +121,7 @@ def view_data(df,n_rows=5):
     print('-'*40)
 
 def time_stats(df):
-    """Displays statistics on the most frequent times of travel."""
+    """Displays statistics on the most frequent times of travel. Note that if the user has chosen to just analyze one month, that month will automatically be the most popular."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
