@@ -121,7 +121,7 @@ def view_data(df,n_rows=5):
     print('-'*40)
 
 def time_stats(df):
-    """Displays statistics on the most frequent times of travel."""
+    """Displays statistics on the most frequent times of travel. Note that if the user has chosen to just analyze one month, that month will automatically be the most popular."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
