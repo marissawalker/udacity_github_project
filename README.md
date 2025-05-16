@@ -1,5 +1,5 @@
 ### Python Bikeshare Project
-This project was for Udacity's python for data science course.
+This project was for Udacity's python for data science course, completed May 2025.
 
 ### Description
 The bike share project analyzes data about a bike share service in several cities. It gives information such as the most popular start and end stations for users and average trip durations. 
